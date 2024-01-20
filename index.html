@@ -107,6 +107,13 @@
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
                                         </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="number6">ข้อมูล6</label>
+                                            <input type="text" class="form-control" placeholder="เลขที่6" id="number6"
+                                                name="number6" required>
+                                            <div class="valid-feedback">ผ่าน</div>
+                                            <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
+                                        </div>
                                     </div>
                                     <div class="row"> </div>
                                     <div class="col"> </div>
@@ -187,6 +194,7 @@
                         var number3 = document.getElementById("number3");
                         var number4 = document.getElementById("number4");
                         var number5 = document.getElementById("number5");
+                        var number6 = document.getElementById("number6");
 
                         liff
                             .sendMessages([
@@ -340,7 +348,7 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number5.value,
+                                                                    "text": "" + number5.value+ number6.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -480,7 +488,7 @@
                   var telField = document.getElementById("tel");
                   var number1Field = document.getElementById("number1");
                   var number2Field = document.getElementById("number2");
-                  var number3Field = document.getElementById("number3");
+                  // var number3Field = document.getElementById("number3");
                   var number4Field = document.getElementById("number4");
                   var number5Field = document.getElementById("number5");
                   var vistoCheckbox = document.getElementById("visto");
