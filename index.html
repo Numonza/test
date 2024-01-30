@@ -83,7 +83,7 @@
 <!--                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">ผ่าน</div> -->
                                         </div>
-<!--                                         <div class="form-group col-md-12">
+                                        <div class="form-group col-md-12">
                                             <label for="tel">เบอร์โทรติดต่อ</label>
                                             <input type="tel" class="form-control" pattern="[0-9]{10}"
                                                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
@@ -91,7 +91,7 @@
                                                 minlength="10" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนเบอร์โทรให้ครบ10หลัก</div>
-                                        </div> -->
+                                        </div>
 
                                         
                                        
@@ -113,8 +113,8 @@
                                             <label for="Hos">โรงพยาบาลที่จะใชิสิทธิประกันสังคม</label>
                                             <input type="text" class="form-control" placeholder="ชื่อโรงพยาบาล" id="Hos"
                                                 name="Hos" required>
-                                            <div class="valid-feedback">ผ่าน</div>
-                                            <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
+<!--                                             <div class="valid-feedback">ผ่าน</div>
+                                            <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div> -->
                                         </div>
 <!--                                         <div class="form-group col-md-12">
                                             <label for="number5">ข้อมูล5</label>
@@ -135,8 +135,8 @@
                                               <option value="No">ไม่ต่อเนื่อง</option>
                                         
                                             </select>
-                                            <div class="valid-feedback">ผ่าน</div>
-                                            <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
+<!--                                             <div class="valid-feedback">ผ่าน</div>
+                                            <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div> -->
                                         </div>
                                     </div>
                                     <div class="row"> </div>
@@ -212,7 +212,7 @@
                         var name = profile.displayName;
                         var picURL = profile.pictureUrl;
                         var uid = profile.userId;
-                        // var tel = document.getElementById("tel");
+                        var tel = document.getElementById("tel");
                         var name1 = document.getElementById("name1");
                         var Dept = document.getElementById("Dept");
                         var zone = document.getElementById("zone");
@@ -410,15 +410,15 @@
                                                 {
                                                     "type": "separator"
                                                 },
-                                                // {
-                                                //     "type": "text",
-                                                //     "text": "หมายเลขโทรศัพท์:" + tel.value,
-                                                //     "wrap": true,
-                                                //     "size": "sm",
-                                                //     "align": "start",
-                                                //     "flex": 0,
-                                                //     "weight": "bold"
-                                                // },
+                                                {
+                                                    "type": "text",
+                                                    "text": "หมายเลขโทรศัพท์:" + tel.value,
+                                                    "wrap": true,
+                                                    "size": "sm",
+                                                    "align": "start",
+                                                    "flex": 0,
+                                                    "weight": "bold"
+                                                },
                                                 {
                                                     "type": "separator"
                                                 },
@@ -511,11 +511,11 @@
 
             function validateForm() {
                   var telField = document.getElementById("tel");
-                  var number1Field = document.getElementById("number1");
-                  var number2Field = document.getElementById("number2");
+                  var number1Field = document.getElementById("name1");
+                  var number2Field = document.getElementById("Dept");
                   // var number3Field = document.getElementById("number3");
-                  var number4Field = document.getElementById("number4");
-                  var number5Field = document.getElementById("number5");
+                  var number4Field = document.getElementById("zone");
+                  var number5Field = document.getElementById("Hos");
                   var vistoCheckbox = document.getElementById("visto");
                   // Add your validation logic here
                   var isValid = true;
