@@ -63,23 +63,23 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label for="number1">ชื่อ - สกุล</label>
-                                            <input type="text" class="form-control" id="number1"
-                                                name="number1">
+                                            <label for="name1">ชื่อ - สกุล</label>
+                                            <input type="text" class="form-control" id="name1
+                                                name="name1" required>
 <!--                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">ผ่าน</div> -->
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label for="number2">ตำแหน่ง</label>
-                                            <input type="text" class="form-control" id="number2"
-                                                name="number2" required>
+                                            <label for="Dept">ตำแหน่ง</label>
+                                            <input type="text" class="form-control" id="Dept"
+                                                name="Dept" required>
 <!--                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">ผ่าน</div> -->
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label for="number3">โซน</label>
-                                            <input type="text" class="form-control" id="number3"
-                                                name="number3" required>
+                                            <label for="zone">โซน</label>
+                                            <input type="text" class="form-control" id="zone"
+                                                name="zone" required>
 <!--                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">ผ่าน</div> -->
                                         </div>
@@ -110,9 +110,9 @@
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div> -->
                                         
                                         <div class="form-group col-md-12">
-                                            <label for="number4">โรงพยาบาลที่จะใชิสิทธิประกันสังคม</label>
-                                            <input type="text" class="form-control" placeholder="เลขที่4" id="number4"
-                                                name="number4" required>
+                                            <label for="Hos">โรงพยาบาลที่จะใชิสิทธิประกันสังคม</label>
+                                            <input type="text" class="form-control" placeholder="ชื่อโรงพยาบาล" id="Hos"
+                                                name="Hos" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
                                         </div>
@@ -212,14 +212,14 @@
                         var name = profile.displayName;
                         var picURL = profile.pictureUrl;
                         var uid = profile.userId;
-                        var tel = document.getElementById("tel");
-                        var number1 = document.getElementById("number1");
-                        var number2 = document.getElementById("number2");
-                        var number3 = document.getElementById("number3");
-                        var number4 = document.getElementById("number4");
-                        var number5 = document.getElementById("number5");
+                        // var tel = document.getElementById("tel");
+                        var name1 = document.getElementById("name1");
+                        var Dept = document.getElementById("Dept");
+                        var zone = document.getElementById("zone");
+                        var Hos = document.getElementById("Hos");
+                        // var number5 = document.getElementById("number5");
                         var number6 = document.getElementById("number6");
-                        var detail = document.getElementById("detail");
+                        // var detail = document.getElementById("detail");
 
                         liff
                             .sendMessages([
@@ -270,14 +270,14 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "ข้อมูลที่1:",
+                                                                    "text": "ชื่อ - สุกล:",
                                                                     "weight": "bold",
                                                                     "margin": "sm",
                                                                     "flex": 0
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number1.value,
+                                                                    "text": "" + name1.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -294,14 +294,14 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "วันเกิด:",
+                                                                    "text": "ตำแหน่ง:",
                                                                     "weight": "bold",
                                                                     "margin": "sm",
                                                                     "flex": 0
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number6.value,
+                                                                    "text": "" + Dept.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -318,14 +318,14 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "อีเมล:",
+                                                                    "text": "โซน:",
                                                                     "weight": "bold",
                                                                     "margin": "sm",
                                                                     "flex": 0
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number6.value,
+                                                                    "text": "" + zone.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -342,14 +342,14 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "ข้อมูลที่4:",
+                                                                    "text": "โรงพยาบาล:",
                                                                     "weight": "bold",
                                                                     "margin": "sm",
                                                                     "flex": 0
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number4.value,
+                                                                    "text": "" + Hos.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -366,14 +366,14 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "ข้อมูลที่5:",
+                                                                    "text": "สิทธิ์เดิมหรือไม่:",
                                                                     "weight": "bold",
                                                                     "margin": "sm",
                                                                     "flex": 0
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number6.value+ number6.value,
+                                                                    "text": "" + number6.value,
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -410,15 +410,15 @@
                                                 {
                                                     "type": "separator"
                                                 },
-                                                {
-                                                    "type": "text",
-                                                    "text": "หมายเลขโทรศัพท์:" + tel.value,
-                                                    "wrap": true,
-                                                    "size": "sm",
-                                                    "align": "start",
-                                                    "flex": 0,
-                                                    "weight": "bold"
-                                                },
+                                                // {
+                                                //     "type": "text",
+                                                //     "text": "หมายเลขโทรศัพท์:" + tel.value,
+                                                //     "wrap": true,
+                                                //     "size": "sm",
+                                                //     "align": "start",
+                                                //     "flex": 0,
+                                                //     "weight": "bold"
+                                                // },
                                                 {
                                                     "type": "separator"
                                                 },
