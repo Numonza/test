@@ -53,8 +53,8 @@
                                 <div class="form-group col-md-12 center">
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
-                                            <center> <img id="picURL" class="avatar" alt="Cinque Terre" width="60"
-                                                    height="60"><br></center>
+                                            <center> <img id="picURL" class="avatar" alt="Cinque Terre" width="90"
+                                                    height="90"><br></center>
                                             <div class="mb-3 mt-3">
                                                 <label for="uname" class="form-label">ชื่อแสดงใน Line:</label>
                                                 <input type="text" class="form-control" name="UName" id="uname"
@@ -63,7 +63,7 @@
                                                 <img id="upic" name="Upic" width="25%">
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-12">
+<!--                                         <div class="form-group col-md-12">
                                             <label for="number1">เบอร์โทรติดต่อ</label>
                                             <input type="tel" class="form-control" pattern="[0-9]{10}"
                                                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
@@ -71,7 +71,7 @@
                                                 minlength="10" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนเบอร์โทรให้ครบ10หลัก</div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="form-group col-md-12">
                                             <label for="number1">ข้อมูล1</label>
@@ -182,7 +182,7 @@
                         var name = profile.displayName;
                         var picURL = profile.pictureUrl;
                         var uid = profile.userId;
-                        var tel = document.getElementById("tel");
+                        // var tel = document.getElementById("tel");
                         var number1 = document.getElementById("number1");
                         var number2 = document.getElementById("number2");
                         var number3 = document.getElementById("number3");
@@ -380,7 +380,7 @@
                                                 },
                                                 {
                                                     "type": "text",
-                                                    "text": "หมายเลขโทรศัพท์:" + tel.value,
+                                                    "text": "หมายเลขโทรศัพท์:",
                                                     "wrap": true,
                                                     "size": "sm",
                                                     "align": "start",
