@@ -74,36 +74,36 @@
                                         </div> -->
 
                                         <div class="form-group col-md-12">
-                                            <label for="number1">ข้อมูล1</label>
+                                            <label for="number1">ชื่อ-สกุล</label>
                                             <input type="text" class="form-control" placeholder="เลขที่1" id="number1"
                                                 name="number1" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">ผ่าน</div>
                                         </div>
-                                        <div class="form-group col-md-12">
+<!--                                         <div class="form-group col-md-12">
                                             <label for="number2">วันเกิด</label>
                                             <input type="date" class="form-control" placeholder="เลขที่2" id="number2"
                                                 name="number2" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
-                                        </div>
-                                        <div class="form-group col-md-12">
+                                        </div> -->
+<!--                                         <div class="form-group col-md-12">
                                             <label for="number3">email</label>
                                             <input type="email" class="form-control" placeholder="เลขที่3" id="number3"
                                                 name="number3" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
-                                        </div>
+                                        </div> -->
                                         <div class="form-group col-md-12">
-                                            <label for="number4">ข้อมูล4</label>
-                                            <input type="text" class="form-control" placeholder="เลขที่4" id="number4"
+                                            <label for="number4">ตำแหน่ง</label>
+                                            <input type="text" class="form-control" placeholder="ตำแหน่ง" id="number4"
                                                 name="number4" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label for="number5">ข้อมูล5</label>
-                                            <input type="text" class="form-control" placeholder="เลขที่5" id="number5"
+                                            <label for="number5">โครงการ</label>
+                                            <input type="text" class="form-control" placeholder="โครงการ" id="number5"
                                                 name="number5" required>
                                             <div class="valid-feedback">ผ่าน</div>
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
@@ -184,8 +184,8 @@
                         var uid = profile.userId;
                         // var tel = document.getElementById("tel");
                         var number1 = document.getElementById("number1");
-                        var number2 = document.getElementById("number2");
-                        var number3 = document.getElementById("number3");
+                        // var number2 = document.getElementById("number2");
+                        // var number3 = document.getElementById("number3");
                         var number4 = document.getElementById("number4");
                         var number5 = document.getElementById("number5");
 
@@ -269,7 +269,7 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number2.value,
+                                                                    "text": "1",
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
@@ -293,7 +293,7 @@
                                                                 },
                                                                 {
                                                                     "type": "text",
-                                                                    "text": "" + number3.value,
+                                                                    "text": "2",
                                                                     "size": "md",
                                                                     "align": "end",
                                                                     "weight": "bold"
