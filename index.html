@@ -197,135 +197,236 @@
                                     contents: {
                                         "type": "bubble",
                                         "hero": {
-                                          "type": "bubble",
-                                          "hero": {
                                             "type": "image",
                                             "url": "" + picURL,
                                             "size": "full",
                                             "aspectRatio": "20:13",
                                             "aspectMode": "cover",
                                             "action": {
-                                              "type": "uri",
-                                              "uri": "https://shop.line.me/@tjj3754a"
+                                                "type": "uri",
+                                                "uri": "https://shop.line.me/@tjj3754a"
                                             }
-                                          },
-                                          "body": {
+                                        },
+                                        "body": {
                                             "type": "box",
                                             "layout": "vertical",
                                             "spacing": "md",
                                             "action": {
-                                              "type": "uri",
-                                              "uri": "https://shop.line.me/@tjj3754a"
+                                                "type": "uri",
+                                                "uri": "https://shop.line.me/@tjj3754a"
                                             },
                                             "contents": [
-                                              {
-                                                "type": "text",
-                                                "text": "ลงทะเบียนสำเร็จแล้ว!"+name,
-                                                "size": "md",
-                                                "weight": "bold",
-                                                "color": "#1DB446",
-                                                "align": "center"
-                                              },
-                                              {
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "spacing": "sm",
-                                                "contents": [
-                                                  {
+                                                {
+                                                    "type": "text",
+                                                    "text": "ลงทะเบียนเรียบร้อยแล้ว!",
+                                                    "size": "md",
+                                                    "weight": "bold",
+                                                    "color": "#1DB446"
+                                                },
+                                                {
                                                     "type": "box",
-                                                    "layout": "baseline",
+                                                    "layout": "vertical",
+                                                    "spacing": "sm",
                                                     "contents": [
-                                                      {
-                                                        "type": "icon",
-                                                        "url": "https://img2.pic.in.th/pic/id-card-1.png"
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "ชื่อ - สกุล:",
-                                                        "weight": "bold",
-                                                        "margin": "sm",
-                                                        "flex": 0
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "" + number1.value,
-                                                        "size": "md",
-                                                        "align": "end",
-                                                        "weight": "bold"
-                                                      }
+                                                        {
+                                                            "type": "box",
+                                                            "layout": "baseline",
+                                                            "contents": [
+                                                                {
+                                                                    "type": "icon",
+                                                                    "url": "https://img.favpng.com/10/13/23/push-button-reset-button-number-numeric-keypad-png-favpng-shqcGgimTiStnrF2tckr9auGh_t.jpg"
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "ข้อมูลที่1:",
+                                                                    "weight": "bold",
+                                                                    "margin": "sm",
+                                                                    "flex": 0
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "" + number1.value,
+                                                                    "size": "md",
+                                                                    "align": "end",
+                                                                    "weight": "bold"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "box",
+                                                            "layout": "baseline",
+                                                            "contents": [
+                                                                {
+                                                                    "type": "icon",
+                                                                    "url": "https://listimg.pinclipart.com/picdir/s/11-119955_red-number-2-clip-art-png-download.png"
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "วันเกิด:",
+                                                                    "weight": "bold",
+                                                                    "margin": "sm",
+                                                                    "flex": 0
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "1",
+                                                                    "size": "md",
+                                                                    "align": "end",
+                                                                    "weight": "bold"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "box",
+                                                            "layout": "baseline",
+                                                            "contents": [
+                                                                {
+                                                                    "type": "icon",
+                                                                    "url": "https://cdn.picpng.com/3/figure-3-35405.png"
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "อีเมล:",
+                                                                    "weight": "bold",
+                                                                    "margin": "sm",
+                                                                    "flex": 0
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "2",
+                                                                    "size": "md",
+                                                                    "align": "end",
+                                                                    "weight": "bold"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "box",
+                                                            "layout": "baseline",
+                                                            "contents": [
+                                                                {
+                                                                    "type": "icon",
+                                                                    "url": "https://image.shutterstock.com/image-illustration/four-4-number-button-260nw-17020453.jpg"
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "ข้อมูลที่4:",
+                                                                    "weight": "bold",
+                                                                    "margin": "sm",
+                                                                    "flex": 0
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "" + number4.value,
+                                                                    "size": "md",
+                                                                    "align": "end",
+                                                                    "weight": "bold"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "box",
+                                                            "layout": "baseline",
+                                                            "contents": [
+                                                                {
+                                                                    "type": "icon",
+                                                                    "url": "https://spng.pngfind.com/pngs/s/654-6546690_original-png-clip-art-file-red-button-5.png"
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "ข้อมูลที่5:",
+                                                                    "weight": "bold",
+                                                                    "margin": "sm",
+                                                                    "flex": 0
+                                                                },
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "" + number5.value,
+                                                                    "size": "md",
+                                                                    "align": "end",
+                                                                    "weight": "bold"
+                                                                }
+                                                            ],
+                                                            "spacing": "md"
+                                                        }
                                                     ]
-                                                  },
-                                                  {
-                                                    "type": "box",
-                                                    "layout": "baseline",
-                                                    "contents": [
-                                                      {
-                                                        "type": "icon",
-                                                        "url": "https://img2.pic.in.th/pic/career-promotion.png"
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "ตำแหน่ง:",
-                                                        "weight": "bold",
-                                                        "margin": "sm",
-                                                        "flex": 0
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "" + number4.value,
-                                                        "size": "md",
-                                                        "align": "end",
-                                                        "weight": "bold"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "type": "box",
-                                                    "layout": "baseline",
-                                                    "contents": [
-                                                      {
-                                                        "type": "icon",
-                                                        "url": "https://img2.pic.in.th/pic/locationba8eaa2f694e3d03.png"
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "โซน:",
-                                                        "weight": "bold",
-                                                        "margin": "sm",
-                                                        "flex": 0
-                                                      },
-                                                      {
-                                                        "type": "text",
-                                                        "text": "" + number5.value,
-                                                        "size": "md",
-                                                        "align": "end",
-                                                        "weight": "bold"
-                                                      }
-                                                    ],
-                                                    "spacing": "md"
-                                                  }
-                                                ]
-                                              },
-                                              {
-                                                "type": "separator"
-                                              },
-                                              {
-                                                "type": "text",
-                                                "text": "Uid : " + uid,
-                                                "wrap": true,
-                                                "size": "sm",
-                                                "align": "start",
-                                                "margin": "sm",
-                                                "weight": "bold"
-                                              },
-                                              {
-                                                "type": "separator"
-                                              }
-                                            ],
-                                            "backgroundColor": "#F5FFFA"
-                                          }
+                                                },
+                                                {
+                                                    "type": "separator"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Uid : " + uid,
+                                                    "wrap": true,
+                                                    "size": "sm",
+                                                    "align": "start",
+                                                    "margin": "sm",
+                                                    "weight": "bold"
+                                                },
+                                                {
+                                                    "type": "separator"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "ชื่อไลน์: " + name,
+                                                    "wrap": true,
+                                                    "size": "sm",
+                                                    "align": "start",
+                                                    "margin": "sm",
+                                                    "weight": "bold"
+                                                },
+                                                {
+                                                    "type": "separator"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "หมายเลขโทรศัพท์:",
+                                                    "wrap": true,
+                                                    "size": "sm",
+                                                    "align": "start",
+                                                    "flex": 0,
+                                                    "weight": "bold"
+                                                },
+                                                {
+                                                    "type": "separator"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "นี่คือเลขข้อมูลการลงทะเบียนของท่าน โปรดเก็บไว้เป็นหลักฐาน",
+                                                    "size": "sm",
+                                                    "align": "center",
+                                                    "color": "#ff3333"
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "button",
+                                                    "action": {
+                                                        "type": "uri",
+                                                        "label": "เยี่ยมชมร้านค้า",
+                                                        "uri": "https://shop.line.me/@692ajmyz"
+                                                    },
+                                                    "style": "primary"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "action": {
+                                                        "type": "uri",
+                                                        "label": "ชวนเพื่อนมาเล่น",
+                                                        "uri": "https://line.me/R/nv/recommendOA/@692ajmyz"
+                                                    },
+                                                    "style": "primary",
+                                                    "margin": "xs",
+                                                    "color": "#ff0000"
+                                                }
+                                            ]
                                         }
-//สิ้นสุดflex
+                                    }
+
                                 }
                             ])
                             //   Swal.fire({
