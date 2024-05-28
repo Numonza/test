@@ -95,7 +95,7 @@
                                             <div class="invalid-feedback">กรุณาป้อนข้อมูลให้ครบ</div>
                                         </div> -->
                                         <div class="form-group col-md-12">
-                                            <label for="number4">ตำแหน่ง</label>
+                                            <label for="number4">ตำแหน่ง1</label>
                                             <input type="text" class="form-control" placeholder="กรุณากรอกช้อมูล" id="number4"
                                                 name="number4" required>
                                             <div class="valid-feedback">ผ่าน</div>
@@ -196,139 +196,206 @@
                                     altText: "ลงทะเบียนสำเร็จ",
                                     contents: {
                                       					"type": "bubble",
-                                        "hero": {
-                                            "type": "image",
-                                            "url": "" + picURL,
-                                            "size": "full",
-                                            "aspectRatio": "20:13",
-                                            "aspectMode": "cover"
-                                           
-                                        },
-                                        "body": {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "spacing": "md",
-                                            "action": {
-                                                "type": "uri",
-                                                "uri": "https://shop.line.me/@tjj3754a"
-                                            },
-                                            "contents": [
-                                                {
-                                                    "type": "text",
-                                                    "text": name +" ลงทะเบียนเรียบร้อยแล้ว!",
-                                                    "size": "md",
-                                                    "weight": "bold",
-                                                    "color": "#1DB446",
-                                                    "align": "center"
-                                                },
-                                                {
-                                                    "type": "box",
-                                                    "layout": "vertical",
-                                                    "spacing": "sm",
-                                                    "contents": [
-                                                        {
-                                                            "type": "box",
-                                                            "layout": "baseline",
-                                                            "contents": [
-                                                                {
-                                                                    "type": "icon",
-                                                                    "url": "https://img2.pic.in.th/pic/id-card-1.png"
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "ชื่อ -สกุล:",
-                                                                    "weight": "bold",
-                                                                    "margin": "sm",
-                                                                    "flex": 0
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "" + number1.value,
-                                                                    "size": "md",
-                                                                    "align": "end",
-                                                                    "weight": "bold"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "type": "box",
-                                                            "layout": "baseline",
-                                                            "contents": [
-                                                                {
-                                                                    "type": "icon",
-                                                                    "url": "https://img2.pic.in.th/pic/career-promotion.png"
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "ตำแหน่ง:",
-                                                                    "weight": "bold",
-                                                                    "margin": "sm",
-                                                                    "flex": 0
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "" + number4.value,
-                                                                    "size": "md",
-                                                                    "align": "end",
-                                                                    "weight": "bold"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "type": "box",
-                                                            "layout": "baseline",
-                                                            "contents": [
-                                                                {
-                                                                    "type": "icon",
-                                                                    "url": "https://img2.pic.in.th/pic/locationba8eaa2f694e3d03.png"
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "โซน:",
-                                                                    "weight": "bold",
-                                                                    "margin": "sm",
-                                                                    "flex": 0
-                                                                },
-                                                                {
-                                                                    "type": "text",
-                                                                    "text": "" + number5.value,
-                                                                    "size": "md",
-                                                                    "align": "end",
-                                                                    "weight": "bold"
-                                                                }
-                                                            ]
-                                                        },
-                                                     
-                                                       
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "separator"
-                                                },
-                                                {
-                                                    "type": "text",
-                                                    "text": "🆔 : " + uid,
-                                                    "wrap": true,
-                                                    "size": "sm",
-                                                    "align": "start",
-                                                    "margin": "sm",
-                                                    "weight": "bold"
-                                                },
-                                                {
-                                                    "type": "separator"
-                                                },
-                                              
-                                                
-                                                {
-                                                    "type": "text",
-                                                    "text": "นี่คือเลขข้อมูลการลงทะเบียนของท่าน",
-                                                    "size": "sm",
-                                                    "align": "center",
-                                                    "color": "#ff3333"
-                                                }
-                                            ],
-                                            "backgroundColor": "#F5FFFA"
-                                        }   
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip13.jpg",
+                    "aspectMode": "cover",
+                    "size": "full"
+                  }
+                ],
+                "cornerRadius": "100px",
+                "width": "80px",
+                "height": "80px",
+                "offsetStart": "90px",
+                "margin": "md"
+              },
+              {
+                "type": "text",
+                "text": "PoPo ",
+                "size": "xl",
+                "color": "#228B22",
+                "weight": "bold",
+                "align": "center",
+                "offsetTop": "md",
+                "margin": "md"
+              },
+              {
+                "type": "text",
+                "text": "🎉ลงทะเบียนสำเร็จแล้ว🎉",
+                "color": "#228B22",
+                "size": "lg",
+                "align": "center",
+                "margin": "md",
+                "weight": "bold"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "icon",
+                        "url": "https://img2.pic.in.th/pic/id-card-1.png",
+                        "offsetStart": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ชื่อ -สกุล:",
+                        "weight": "bold",
+                        "margin": "md",
+                        "color": "#000000",
+                        "align": "start"
+                      }
+                    ],
+                    "margin": "md"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "icon",
+                        "url": "https://img5.pic.in.th/file/secure-sv1/pointing-right.png",
+                        "offsetStart": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "นางสาวนฤมล พลเจริญพรชัย",
+                        "size": "md",
+                        "weight": "bold",
+                        "color": "#990000",
+                        "align": "center",
+                        "wrap": true,
+                        "scaling": true,
+                        "offsetStart": "sm"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "icon",
+                        "url": "https://img2.pic.in.th/pic/career-promotion.png",
+                        "offsetStart": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ตำแหน่ง:",
+                        "weight": "bold",
+                        "margin": "md",
+                        "color": "#000000"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ไอที",
+                        "size": "md",
+                        "align": "start",
+                        "weight": "bold",
+                        "color": "#990000"
+                      }
+                    ],
+                    "margin": "md"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "icon",
+                        "url": "https://img2.pic.in.th/pic/locationba8eaa2f694e3d03.png",
+                        "offsetStart": "sm"
+                      },
+                      {
+                        "type": "text",
+                        "text": "โครงการ:",
+                        "weight": "bold",
+                        "margin": "md",
+                        "color": "#000000"
+                      },
+                      {
+                        "type": "text",
+                        "text": "แสมดำ",
+                        "size": "md",
+                        "align": "start",
+                        "weight": "bold",
+                        "color": "#990000"
+                      }
+                    ],
+                    "margin": "md"
+                  }
+                ],
+                "spacing": "sm",
+                "margin": "lg",
+                "height": "150px"
+              }
+            ],
+            "backgroundColor": "#40E0D0",
+            "cornerRadius": "md",
+            "height": "320px",
+            "borderColor": "#99FF33",
+            "borderWidth": "semi-bold"
+          }
+        ],
+        "paddingAll": "20px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🆔 :111ad25esa459eda5drew623478sdre64",
+            "wrap": true,
+            "weight": "bold",
+            "align": "start",
+            "size": "12px",
+            "margin": "xs",
+            "color": "#990000"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⭐️⭐️⭐️⭐️❤️❤️❤️⭐️⭐️⭐️⭐️",
+            "align": "center",
+            "color": "#ff3333"
+          }
+        ],
+        "offsetTop": "xl"
+      }
+    ],
+    "paddingAll": "0px",
+    "height": "430px",
+    "backgroundColor": "#00CED1",
+    "borderColor": "#FFFF00",
+    "borderWidth": "bold",
+    "cornerRadius": "md"
+  }
 
                                 }
                             ])
